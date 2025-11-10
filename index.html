@@ -20,22 +20,17 @@
       background-color: #013a63;
       color: white;
       text-align: center;
-      padding: 2rem 1rem 3rem;
-      position: relative;
+      padding: 2rem 1rem;
     }
 
     header img {
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #ffffff;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -70px;
-      background-color: #fff;
+      margin-top: 1.5rem;
     }
 
     header h1 {
@@ -67,7 +62,7 @@
 
     main {
       max-width: 900px;
-      margin: 5rem auto 2rem;
+      margin: 2rem auto;
       padding: 1rem 2rem;
       background: white;
       border-radius: 12px;
@@ -117,13 +112,13 @@
   <header>
     <h1>Amber Cowans</h1>
     <h2>PhD Student | CREEM, University of St Andrews</h2>
+    <img src="images/Portrait_Cowans.jpg" alt="Photo of Amber Cowans" />
     <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </nav>
-    <img src="images/Portrait_Cowans.jpg" alt="Photo of Amber Cowans" />
   </header>
 
   <main>
@@ -180,11 +175,6 @@
 
   <script>
     // Automatically update the year
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
-
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
