@@ -60,16 +60,21 @@
       color: #555;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-top: 2rem;
+    /* 🔹 Button styling */
+    .download-btn {
+      background-color: #014f86;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
       text-decoration: none;
-      color: #014f86;
-      font-weight: bold;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+      display: inline-block;
+      margin-top: 10px;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    .download-btn:hover {
+      background-color: #013a63;
     }
   </style>
 </head>
@@ -81,6 +86,13 @@
     <div class="contact">
       📧 ajpc1@st-andrews.ac.uk | 🌐 <a href="#" target="_blank">LinkedIn</a><br>
       Centre for Research into Ecological & Environmental Modelling (CREEM)
+    </div>
+
+    <!-- 🔹 Add your download button HERE -->
+    <div style="text-align: center; margin-top: 1rem;">
+      <a href="Amber_Cowans_CV.pdf" download class="download-btn">
+        📄 Click to Download CV (PDF)
+      </a>
     </div>
   </header>
 
