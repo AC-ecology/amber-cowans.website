@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Amber Cowans - PhD Student at the Centre for Research into Environmental and Ecological Modelling (CREEM), University of St Andrews" />
+  <title>Amber Cowans | PhD Student at CREEM</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #013a63;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header h2 {
+      margin: 0.5rem 0 0;
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: #a9d6e5;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #89c2d9;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #01497c;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #014f86;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #012a4a;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #89c2d9;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Amber Cowans</h1>
+    <h2>PhD Student | CREEM, University of St Andrews</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a PhD student at the 
+        <a href="https://www.creem.st-andrews.ac.uk/" target="_blank">
+          Centre for Research into Environmental and Ecological Modelling (CREEM)
+        </a>,
+        part of the 
+        <a href="https://www.st-andrews.ac.uk/" target="_blank">
+          University of St Andrews
+        </a>.
+      </p>
+      <p>
+        My research focuses on developing and applying advanced statistical and computational methods to better understand and model ecological systems. 
+        I am particularly interested in environmental data analysis, population dynamics, and improving ecological modelling tools to support conservation and management decisions.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Statistical modelling of ecological and environmental data</li>
+        <li>Bayesian inference and computational methods</li>
+        <li>Population estimation and wildlife monitoring</li>
+        <li>Applications of spatial and temporal modelling</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications & Projects</h2>
+      <p>Coming soon — check back for updates on recent publications and ongoing research projects.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        📧 <a href="mailto:acjpc1@st-andrews.ac.uk">ajpc1@st-andrews.ac.uk</a><br />
+        🏛️ <a href="https://www.creem.st-andrews.ac.uk/" target="_blank">CREEM, University of St Andrews</a><br />
+        🐙 <a href="https://github.com/AmberCowans" target="_blank">GitHub: AmberCowans</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Amber Cowans — Centre for Research into Environmental and Ecological Modelling (CREEM), University of St Andrews</p>
+  </footer>
+
+  <script>
+    // Automatically update the year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
