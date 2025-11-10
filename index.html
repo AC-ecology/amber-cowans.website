@@ -88,6 +88,36 @@
       margin-left: 1.5rem;
     }
 
+    /* Layout for research + camera trap image */
+    .research-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    .research-text {
+      flex: 1 1 55%;
+    }
+
+    .camera-image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .camera-image img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .camera-caption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #555;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -133,12 +163,20 @@
 
     <section id="research">
       <h2>Research Interests</h2>
-      <ul>
-        <li>Statistical modelling of ecological and environmental data</li>
-        <li>AI tools for ecology</li>
-        <li>Applications of spatial and temporal modelling</li>
-        <li>Quantitative social science</li>
-      </ul>
+      <div class="research-wrapper">
+        <div class="research-text">
+          <ul>
+            <li>Statistical modelling of ecological and environmental data</li>
+            <li>AI tools for ecology</li>
+            <li>Applications of spatial and temporal modelling</li>
+            <li>Quantitative social science</li>
+          </ul>
+        </div>
+        <div class="camera-image">
+          <img id="trapImage" src="" alt="Camera trap wildlife image" />
+          <div class="camera-caption">📸 Refresh for camera trap images!</div>
+        </div>
+      </div>
     </section>
 
     <section id="publications">
@@ -176,6 +214,20 @@
   <script>
     // Automatically update the year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Random camera trap image logic
+    const images = [
+      "images/cameratrap/Badgers_INS.JPG",
+      "images/cameratrap/Capercaillie cock_GLM.JPG",
+      "images/cameratrap/Deer_WLD.JPG",
+      "images/cameratrap/Marten_INS.JPG",
+      "images/cameratrap/Red squirrel_WLD.JPG",
+      "images/cameratrap/Red fox_ABN.JPG"
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("trapImage").src = randomImage;
   </script>
 </body>
 </html>
+
