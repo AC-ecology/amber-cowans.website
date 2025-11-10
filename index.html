@@ -20,7 +20,22 @@
       background-color: #013a63;
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 3rem;
+      position: relative;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -70px;
+      background-color: #fff;
     }
 
     header h1 {
@@ -52,7 +67,7 @@
 
     main {
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 5rem auto 2rem;
       padding: 1rem 2rem;
       background: white;
       border-radius: 12px;
@@ -66,6 +81,16 @@
 
     a {
       color: #014f86;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
     }
 
     footer {
@@ -98,24 +123,16 @@
       <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </nav>
+    <img src="images/Portrait_Cowans.jpg" alt="Photo of Amber Cowans" />
   </header>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I am a PhD student at the 
-        <a href="https://www.creem.st-andrews.ac.uk/" target="_blank">
-          Centre for Research into Environmental and Ecological Modelling (CREEM)
-        </a>,
-        part of the 
-        <a href="https://www.st-andrews.ac.uk/" target="_blank">
-          University of St Andrews
-        </a>.
-      </p>
-      <p>
-        My research focuses on developing and applying advanced statistical and computational methods to better understand and model ecological systems. 
-        I am particularly interested in environmental data analysis, population dynamics, and improving ecological modelling tools to support conservation and management decisions.
+        Hello! My name is Amber, and I am a quantitative ecologist, interested in developing scalable and efficient biodiversity monitoring methods to study human–wildlife interactions. 
+        My current research is based in the <a href="https://cairngormsconnect.org.uk/science-and-monitoring/predator-project" target="_blank">Cairngorms Connect landscape</a>, Scotland’s largest habitat restoration project. 
+        I am a current PhD student at the <a href="https://www.creem.st-andrews.ac.uk/" target="_blank">Centre for Research into Environmental and Ecological Modelling (CREEM)</a> at the University of St Andrews.
       </p>
     </section>
 
@@ -123,21 +140,34 @@
       <h2>Research Interests</h2>
       <ul>
         <li>Statistical modelling of ecological and environmental data</li>
-        <li>Bayesian inference and computational methods</li>
-        <li>Population estimation and wildlife monitoring</li>
+        <li>AI tools for ecology</li>
         <li>Applications of spatial and temporal modelling</li>
+        <li>Quantitative social science</li>
       </ul>
     </section>
 
     <section id="publications">
       <h2>Publications & Projects</h2>
-      <p>Coming soon — check back for updates on recent publications and ongoing research projects.</p>
+      <ul>
+        <li>
+          Cowans, A., Lambin, X., Hare, D., & Sutherland, C. (2024). 
+          <em>Improving the integration of artificial intelligence into existing ecological inference workflows.</em> 
+          <strong>Methods in Ecology and Evolution.</strong> 
+          <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14485" target="_blank">[Read article]</a>
+        </li>
+        <li>
+          Cowans, A., Bigatà, A. B., & Sutherland, C. (2025). 
+          <em>Sample size considerations for species co‐occurrence models.</em> 
+          <strong>Ecology, 106(8), e70175.</strong> 
+          <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.70175" target="_blank">[Read article]</a>
+        </li>
+      </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        📧 <a href="mailto:acjpc1@st-andrews.ac.uk">ajpc1@st-andrews.ac.uk</a><br />
+        📧 <a href="mailto:ac###@st-andrews.ac.uk">ac###@st-andrews.ac.uk</a><br />
         🏛️ <a href="https://www.creem.st-andrews.ac.uk/" target="_blank">CREEM, University of St Andrews</a><br />
         🐙 <a href="https://github.com/AmberCowans" target="_blank">GitHub: AmberCowans</a>
       </p>
@@ -150,6 +180,11 @@
 
   <script>
     // Automatically update the year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
